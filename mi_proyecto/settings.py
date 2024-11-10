@@ -25,8 +25,7 @@ SECRET_KEY = config('SECRET_KEY_env')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 # Application definition
 
@@ -68,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'mi_proyecto.wsgi.application'
+WSGI_APPLICATION = 'mi_proyecto.wsgi.app'
 
 
 # Database
